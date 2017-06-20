@@ -1,0 +1,25 @@
+header, main, footer {
+  font-family: sans-serif, "Roboto";
+  padding-left: 280px !important;
+}
+
+ul li span {
+
+}
+
+.secondary-content {
+  position: absolute;
+  float: right;
+  color: #26a69a;
+}
+
+.secondary-content span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media only screen and (min-width:990px) and (max-width:1366px) {
+  header, main, footer {
+    padding-left: 0 !important;
+  }
+}

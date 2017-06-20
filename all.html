@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/custom-css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <!-- jQuery -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="js/w3.js"></script>
+  <script src="js/custom-js.js"></script>
+
+</header>
+
+<body>
+
+  <!-- Side Bar -->
+  <div class="w3-sidebar w3-bar-block w3-collapse" style="width:280px;" id="mySidebar">
+    <ul class="w3-ul">
+      <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+      <div class="w3-display-container">
+        <img src="pic/bg.png" style="height:160px;">
+        <div class="w3-padding w3-display-topleft">
+          <img class="w3-circle" style="width:56px; height:56px;" src="pic/profile.png" alt="avatar">
+        </div>
+        <a class="w3-display-left" style="padding-left:16px; padding-top:16px;" href="#!">John Dev</a>
+        <a class="w3-display-left" style="padding-left:16px; padding-top:80px;" href="#!">john.dev@gmail.com</a>
+      </div>
+      <li>
+        <a href="index.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">inbox</i>
+          <span style="margin-left:8px;">All Inboxes</span>
+          <span class="w3-right w3-text-gray" style="font-weight:500;">99</span>
+        </a>
+      </li>
+      <li>
+        <a href="primary.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">inbox</i>
+          <span style="margin-left:8px;">Primary</span>
+        </a>
+        <a href="social.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">group</i>
+          <span style="margin-left:8px;">Socials</span>
+        </a>
+        <a href="promotion.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">local_offer</i>
+          <span style="margin-left:8px;">Promotion</span>
+        </a>
+      </li>
+      <li>
+        <p class="w3-text-grey" style="padding-left:16px; font-size:14px; font-weight:500; line-height:1px;">All labels</p>
+        <a href="starred.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">star</i>
+          <span style="margin-left:8px;">Starred</span>
+        </a>
+        <a href="important.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">label</i>
+          <span style="margin-left:8px;"> Important </span>
+        </a>
+        <a href="sent.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">send</i>
+          <span style="margin-left:8px;"> Sent </span>
+        </a>
+        <a href="outbox.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">mail_outline</i>
+          <span style="margin-left:8px;"> Outbox </span>
+        </a>
+
+        <a href="draft.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">insert_drive_file</i>
+          <span style="margin-left:8px;"> Drafts </span>
+        </a>
+
+        <a href="all.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">mail</i>
+          <span style="margin-left:8px;"> All mails </span>
+        </a>
+
+        <a href="spam.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">error</i>
+          <span style="margin-left:8px;"> Spam </span>
+        </a>
+
+        <a href="trash.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">delete</i>
+          <span style="margin-left:8px;"> Trash </span>
+        </a>
+        <a href="primary.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">label</i>
+          <span style="margin-left:8px;"> ส่วนตัว </span>
+        </a>
+      </li>
+
+      <li>
+        <a href="setting.html"  class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">settings</i>
+          <span style="margin-left:8px;"> Settings </span>
+        </a>
+
+        <a href="help.html" class="w3-bar-item w3-button">
+          <i class="material-icons w3-text-grey">help</i>
+          <span style="margin-left:8px;"> Help & feedback </span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Top bar -->
+  <div class="w3-main" style="margin-left:280px;">
+    <div class="w3-red">
+      <div class="w3-container" style="padding:0.01em 0;">
+        <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <a href="#!" style="font-size:20px; font-weight:400;">All mail</a>
+        <a class="w3-button w3-right w3-xlarge" href="#"><i class="material-icons">search</i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- show email list -->
+  <ul class="w3-ul w3-border-bottom w3-main" style="margin-left:280px;">
+    <li class="w3-padding-16">
+      <i class="w3-left w3-circle w3-red w3-center" style="width:42px; height:42px; line-height:40px;">A</i>
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Amazon.com</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Summer sale is now going on.</span>
+
+    </li>
+    <li class="w3-padding-16">
+      <img src="pic/profile.png" class="w3-left w3-circle" style="width:42px;height:42px;">
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Joe Dev</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Hey John.</span>
+    </li>
+    <li class="w3-padding-16">
+      <i class="w3-left w3-circle w3-red w3-center" style="width:42px; height:42px; line-height:40px;">A</i>
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Amazon.com</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Summer sale is now going on.</span>
+
+    </li>
+    <li class="w3-padding-16">
+      <img src="pic/profile.png" class="w3-left w3-circle" style="width:42px;height:42px;">
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Joe Dev</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Hey John.</span>
+    </li>
+    <li class="w3-padding-16">
+      <i class="w3-left w3-circle w3-red w3-center" style="width:42px; height:42px; line-height:40px;">A</i>
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Amazon.com</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Summer sale is now going on.</span>
+
+    </li>
+    <li class="w3-padding-16">
+      <img src="pic/profile.png" class="w3-left w3-circle" style="width:42px;height:42px;">
+      <div  class="w3-right">
+        <span class="w3-text-blue" style="font-size:14px; font-weight:normal;">12:10pm</span><br>
+        <i class="material-icons w3-text-grey w3-right">star_border</i>
+      </div>
+      <span style="padding-left:16px;">Joe Dev</span><br>
+      <span class="w3-text-grey" style="padding-left:16px;">Hey John.</span>
+    </li>
+  </ul>
+
+  <!-- button -->
+  <button class="w3-button w3-circle w3-red w3-display-bottomright w3-xlarge" style="right:24px; bottom:24px;">
+    <a href="new.html">
+    <i class="material-icons">mode_edit</i>
+  </a>
+  </button>
+
+
+</body>
+</html>
